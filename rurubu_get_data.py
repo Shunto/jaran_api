@@ -247,7 +247,6 @@ def getRurubuDetailPageData(url):
        leisures = []
        conveni = []
        for content in soup.find("div", {"id" : "tabbody-detail"}).find_all("tr"):
-           print(content.th)
            title = content.th.get_text()
            if title == 'レジャーランド' :
                leisures.append(title) #content.td
